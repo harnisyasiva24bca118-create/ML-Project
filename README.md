@@ -70,11 +70,11 @@ Runtime anomalies
  This repository does NOT contain malware binaries.
 
  Methodology :
-1 Environment Setup
+1) Environment Setup
 
 A sandbox (e.g., Cuckoo Sandbox, Any.Run, CAPEv2) was used to safely execute samples and capture behavioral logs.
 
-2️ Feature Extraction
+2️) Feature Extraction
 
 Behavioral events were parsed and converted into numerical feature vectors using:
 
@@ -84,7 +84,7 @@ TF-IDF–based technique on event sequences
 
 One-hot encoding of behavioral categories
 
-3️ Model Training
+3️) Model Training
 
 Various ML models were trained:
 
@@ -98,7 +98,7 @@ Logistic Regression
 
 Neural Networks (optional)
 
-4️ Evaluation Metrics
+4️) Evaluation Metrics
 
 Accuracy
 
@@ -116,7 +116,7 @@ Model	Accuracy	F1-Score	AUC
 Random Forest	94%	0.93	0.96
 XGBoost	96%	0.95	0.98
 SVM	91%	0.90	0.92
-🛡 Safety & Ethical Disclaimer
+ Safety & Ethical Disclaimer
 
 All testing was conducted in an isolated sandbox environment.
 
